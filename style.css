@@ -28,8 +28,10 @@
 
 body {
     background: var(--bg-color) no-repeat top center;
+    height: 100vh;
     background-size: cover;
     transition: all .5s;
+    overflow-y: hidden;
 }
 
 #container {
@@ -160,4 +162,14 @@ footer {
 
 footer a {
     color: var(--text-color);
+}
+
+@media (min-width: 700px) {
+    :root {
+        --bg-color: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-color: url(./assets/bg-desktop-light.jpg);
+    }
 }
